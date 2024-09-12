@@ -42,13 +42,13 @@
     display: grid;
     
 }
-.header-tekst{
+/* .header-tekst{
     position: absolute;
     bottom: 15em;
     right: 13em;
     color:var(--color-header-text);
 
-}
+} */
 
 p {
     font-size: 15px;
@@ -60,10 +60,10 @@ h1 {
     font-size: 24px;
 }
 
-button{
-    /* display: inline-block; */
+/* button{
+ 
     font-size: 16px;
     padding: 15px 30px 11px;
     border-radius:var(--border--radius);
     border: none;
-}
+} */
