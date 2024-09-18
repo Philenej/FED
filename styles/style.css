@@ -10,22 +10,37 @@ button:not(:disabled){
 }
 
 
-
+@font-face {
+	font-family: 'Oceanwide-Semibold';
+	src: url(../fonts/Oceanwide-Semibold.woff2);
+	font-weight: 500;
+	font-style: normal;
+	font-display: fallback;
+}
+@font-face {
+	font-family: 'Oceanwide-regular';
+	src: url(../fonts/oceanwide-regular.woff2);
+}
 
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
 	/* startje */
+	--oceanwide-semibold:'Oceanwide-Semibold';
+	--oceanwide-regular:'Oceanwide-regular';
 	--color-text:#111;
 	--color-background:#eee;
+	--scherm-background:#fff;
 	--color-header-text:#ffffff;
 	--menu-gradient:rgb(234, 38, 38);
+	--menu-color:#ababab;
 	
 }
 body{
+	margin:0;
+    background-color:var(--scherm-background);
 
-background-color: #eee;
 }
 
 
@@ -34,100 +49,153 @@ background-color: #eee;
 /****************/
 
 
+
 header{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	position: fixed;
-	top: 0;
-	left: 0;
-	
-	/* gap: 5em; */
-	/* flex-wrap: wrap;  */
+	min-height:4em;
+    padding:0 1em;
+    line-height:1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
 	
 }
-
+/* alle links in de header */
 header a{
 	display: block;
 	text-decoration: none;
-	color:var(--color-header-text);
+	color:var(--color-text);
 	padding:.5em 0;
-		
-		
-	  
+	font-weight: bold;
+	
 }
 /*  */
 
-
+/* menu  */
 nav {
-	/* display: flex; */
-	flex-grow: 1;
 	padding: 1em;
 	display: grid;
-	align-items: start;
 	gap: 1em;
+	/* z-index: 999; */
 }
 
 nav ul {
 	margin: 0;
-
 	list-style: none;
 	position: fixed;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
+    padding:4em 1em 0;
 
-  padding:4em 1em 0;
-
   
-  display:flex;
-  flex-wrap:wrap;
-  gap:1em;
-  align-content:start;
-  
-  background:var(--menu-gradient);
-  
+    display:flex;
+    flex-wrap:wrap;
+    gap:1em;
+    align-content:start;
+    background:var(--menu-color);
+    
  
   
 /*  inset: 0; is alle top,bottom,left, right bij elkaar  */
-  /* JOUW CODE HIER - stap 2 */
+
   translate: 100%;
 /*  translate:0 100%; is x=0 en y=100 as  */
 
-  
-  /* JOUW CODE HIER - stap 4 */
   transition: 1s;
+
+}
+/* zorgt ervoor dat bij click het menu uitklapt en zichtbaar is */
+nav.toonMenu ul {
+    translate: 0%;
+    
+  }
+  nav.toonMenu button img {
+
+    /* url kruisje: https://assets.codepen.io/274456/ui-icon-cross.svg */
+  
+    content:url("https://assets.codepen.io/274456/ui-icon-cross.svg");
+  /*  er komt zo een kruisje als je het menu wilt sluiten!!!!!!  */
+  }
+
+nav li {
+	display: block;
+	/* flex-basis:9em; */
+	flex-grow:0; 
+	/* bij 1 hele breedte */
 }
 
-
-/* nav.toonMenu ul {
-	
-	translate: 0%;
-	
-  } */
 nav a {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
-	column-gap: .25em;
-	border-bottom: solid 1px;
+	column-gap: .25em; 
+	border-bottom: solid 2px;
+	
 }
 
+  /***************/
+  /* MENU BUTTON */
+  /***************/
+  nav button {
+    padding:.5em;
+    
+    display:flex;
+    align-items:center;
+    gap:.25em;
+    
+    appearance:none;
+    border: 1px solid;
+    border-radius:.25em; 
+    font:inherit;
+    text-align:center;
+    
+    position:relative;
+    z-index: 100;
+    
+  }
 
+/*********************/
+/* ..........*/
+/*********************/
 
-/* header nav ul{
-	display: flex;
-
-	justify-content: right;
-} */
-/* header nav li{
-	
-	margin-left: 2em;
-} */
-header img{
-	width: 1.5em;
-	height: 1.5em;
-	
-  
-  /* padding:.75em 0 .75em 2.75em; */
-}
+  @media (min-width:38em) { 
+    nav {
+      
+      order: 0; 
+    /* dan komt die op z'n normale plek te staan (in het midden) zzoals gepositioneerd stond   */
+    }
+    
+    nav button {
+      display: none; 
+     /* in beeld bij klein scherm niet bij grootscherm !!!!!!!!!! nodig voor mijn code */
+    }
+    
+    nav ul {
+      position: static;
+      translate: none;
+      background: none;
+      padding: 0;
+    
+   /* nodig voor mijn code !!!!!!111 */
+      
+    } 
+    
+    nav li {
+      flex-basis: 0;
+    /* de standaard breedte    */
+      flex-grow: 0;
+    /* ruimte opvullen bij hoger getal dan 0 anders bij 0 niet het geval */
+      
+    }
+    
+    /* voor de navigatie zonder menu */
+    nav a {
+      /* flex-direction: column; */
+      border: none;
+      
+    }
+    
+  } 

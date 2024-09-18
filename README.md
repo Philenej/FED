@@ -47,7 +47,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="images/Daily Paper - White Smoothie T Shirt – Daily Paper Worldwide.pdf" width="375px" alt="Detail pagina Daily Paper T-shirt">
  
 </details>
 
@@ -61,6 +61,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
+    Ik ben aan het werk gegaan met de screenreader en ben de WCAG checklist afgegaan om te kijken hoe de toegankelijkheid van de Daily Paper website is. Ik kon en kan nog steeds moeilijk omgaan met de screenreader, daar moet ik dus meer aandacht aan besteden om dit onder de knie te krijgen. Verder viel me heel erg op dat het gebruik van div's heel erg overdreven is toegepast. Echt bij elk deel van de website zit de content genest in een div. De h elementen zijn heel erg verwarrend, doordat er vaak met een h3 boven een h2 wordt gewerkt.
+
+  Met de screenreader ben ik er nog niet helemaal uit of ik dit niet goed onder controle heb of dat de website ook gewoon heel slecht is voor screenreaders. Ik denk tot nu toe dat dit beide het geval is.
+  
 </details>
 
 
@@ -94,7 +98,39 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
 
+  
   ### Agenda voor meeting
+  samen met je groepje opstellen
+
+  | student 1          | student 2      | student 3     | student 4           |
+  | Hoe kan ik de css  | HTML structuur |Bij tekst die  |Hoe maak je op de    |
+  | het best opdelen   | nakijken       |wordt afgekapt |juiste manier gebruik|
+  | (volgorde) HTML    | CSS checken    |met lees meer  |van de screenreader  |
+  | structuur bekijken?| ...            |wel hele tekst?| ...                 |
+
+
+  ### Verslag van meeting
+  hier na afloop snel de uitkomsten van de meeting vastleggen
+
+  - classes veranderen
+  - h boven p
+  - button in a link veranderen
+  - Geholpen met de error in Github desktop
+</details>
+
+
+
+
+
+## Voortgang 2 (week 3)
+
+<details>
+  <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
+
+  ### Stand van zaken
+  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+
+### Agenda voor meeting
   samen met je groepje opstellen
 
   | student 1      | student 2          | student 3    | student 4        |
@@ -111,39 +147,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - punt 2
   - nog een punt
   - ...
-
-</details>
-
-
-
-
-
-## Voortgang 2 (week 3)
-
-<details>
-  <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
-
-  ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
 
 </details>
 

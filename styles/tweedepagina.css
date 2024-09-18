@@ -18,7 +18,7 @@
   :root {
     --scherm-background:#fff;
     
-    --menu-color:#ababab;
+   
     --menu-border:rgb(0, 0, 0);
     
   }
@@ -27,154 +27,26 @@
   /********************/
   /* ALGEMENE STIJLEN */
   /********************/
-  body {
-    margin:0;
-    background-color:var(--scherm-background);
-    
-  }
+
   
 
   
   /*************/
   /* DE HEADER */
   /*************/
-  header {
-    min-height:4em;
-    padding:0 1em;
-    line-height:1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-  }
-  
-  /* alle links in de header */
-  header a {
-    padding:.5em 0;
-    color:var(--general-color);
-    text-decoration:none;
-  }
+
+
   
   
   
   /***************/
   /* MENU BUTTON */
   /***************/
-  nav button {
-    padding:.5em;
-    
-    /* icon en tekst met gap-je naast elkaar */
-    display:flex;
-    align-items:center;
-    gap:.25em;
-    
-    /* standaard styling aanpassen */
-    appearance:none;
-    border: 1px solid;
-    border-radius:.25em; 
-    font:inherit;
-    text-align:center;
-    
-    position:relative;
-    z-index: 100;
-    
-  }
   
 
-  /* als menu open is */
-  nav.toonMenu button img {
 
-    /* url kruisje: https://assets.codepen.io/274456/ui-icon-cross.svg */
-  
-    content:url("https://assets.codepen.io/274456/ui-icon-cross.svg");
-  /*  er komt zo een kruisje als je het menu wilt sluiten!!!!!!  */
-  }
-  
-  
-  
-  
-  
-  /*******************/
-  /* LIJST MET LINKS */
-  /*******************/
-  nav ul { 
-    margin:0; 
-    padding:4em 1em 0;
-    list-style:none;
-    
-    display:flex;
-    flex-wrap:wrap;
-    gap:1em;
-    align-content:start;
-    background:var(--menu-color);
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    
-  /*  inset: 0; is alle top,bottom,left, right bij elkaar  */
-    /* JOUW CODE HIER - stap 2 */
-    translate: 100%;
-  /*  translate:0 100%; is x=0 en y=100 as  */
-  
-    
-    /* JOUW CODE HIER - stap 4 */
-    transition: 1s;
-  }
-  
-  /* als menu open is */
-  nav.toonMenu ul {
-    /* JOUW CODE HIER - stap 4 */
-    translate: 0%;
-    
-  }
-  
-  nav li {
-    flex-basis:9em;
-    flex-grow:1;
-  }
   
 
- @media (min-width:38em) { 
-    nav {
-      
-      order: 0; 
-    /* dan komt die op z'n normale plek te staan (in het midden) zzoals gepositioneerd stond   */
-    }
-    
-    nav button {
-      display: none; 
-     /* in beeld bij klein scherm niet bij grootscherm !!!!!!!!!! nodig voor mijn code */
-    }
-    
-    nav ul {
-      position: static;
-      translate: none;
-      background: none;
-      padding: 0;
-   /* nodig voor mijn code !!!!!!111 */
-      
-    } 
-    
-    nav li {
-      flex-basis: 0;
-    /* de standaard breedte    */
-      flex-grow: 0;
-    /* ruimte opvullen bij hoger getal dan 0 anders bij 0 niet het geval */
-      
-    }
-    
-    nav a {
-      flex-direction: column;
-      border: none;
-      
-    }
-    
-  } 
-  
-  
   /****************************************************************/
   /* styling voor de header als de browser minimaal 57em breed is */
   /****************************************************************/
@@ -188,28 +60,6 @@
   } */
    
   
-  /***********/
-  /* Tekst */
-  /***********/
-  
-  main h1,
-  main p {
-    margin:0 auto;
-    line-height:1.75;
-  }
-  
-  main h1 {
-    padding:5vw 2.5vw 0;
-    
-  }
-  
-  main p {
-    padding:0 2.5vw 2.5vw;
-  }
-
-.Logo {
-    font-weight: bold;
-}
 
 .WitShirt1{    
     width: 100vw;
@@ -242,19 +92,3 @@
     height: 100vh;
     object-fit: cover;
 }
-.Locatie1{
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-  }
-
-  .Locatie2{
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-  }
-  .Locatie3{
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-  }
