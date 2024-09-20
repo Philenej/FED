@@ -1,14 +1,14 @@
 // JavaScript Document
 console.log("hi");
 
-let deButton = document.querySelector("nav button");
-let deUl = document.querySelector("nav");
+let ButtonMenu = document.querySelector("nav button");
+let Menu = document.querySelector("nav");
 
-deButton.onclick = toggleMenu;
+ButtonMenu.onclick = toggleMenu;
 
 
 function toggleMenu(){
-  deUl.classList.toggle("toonMenu");
+  Menu.classList.toggle("toonMenu");
 }
 
 // const tweedeDiv = document.querySelector('section:nth-of-type(7) > div');
@@ -40,30 +40,5 @@ function toggleMenu(){
 
 
 
-// menu sluiten en openen
-// let deButton = document.querySelector("nav button");
-// let deUl = document.querySelector("nav");
-
-// deButton.onclick = toggleMenu;
-
-// function toggleMenu(){
-//     deUl.classList.toggle("toonMenu");
-// }
-
-// document.addEventListener('DOMContentLoaded', () => {
-//     const menuButton = document.querySelector('.menu-button');
-//     const nav = document.querySelector('nav');
-  
-//     // Menu open/close togglen
-//     menuButton.addEventListener('click', () => {
-//       nav.classList.toggle('toonMenu');
-//     });
-  
-//     // Sluit button functionaliteit
-//     const closeButton = nav.querySelector('button');
-//     closeButton.addEventListener('click', () => {
-//       nav.classList.remove('toonMenu');
-//     });
-//   });
 
 
