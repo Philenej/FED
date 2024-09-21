@@ -102,11 +102,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1          | student 2      | student 3     | student 4           |
-  | Hoe kan ik de css  | HTML structuur |Bij tekst die  |Hoe maak je op de    |
-  | het best opdelen   | nakijken       |wordt afgekapt |juiste manier gebruik|
-  | (volgorde) HTML    | CSS checken    |met lees meer  |van de screenreader  |
-  | structuur bekijken?| ...            |wel hele tekst?| ...                 |
+  | student 1          | student 2      | student 3     | student 4       |
+  | Hoe kan ik de css  | HTML structuur |Bij tekst die  |Hoe maak je op de
+  | het best opdelen   | nakijken       |wordt afgekapt |juiste maniergebruik|
+  | (volgorde) HTML    | CSS checken    |met lees meer  |van de screenreader |
+  | structuur bekijken?| ...            |wel hele tekst?| ...              |
 
 
   ### Verslag van meeting
@@ -134,19 +134,24 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   samen met je groepje opstellen
 
   | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | Hoe kan ik in  | ---                | ---          | ---              |
+  | de carousel    | en dit             | en ik dit    | en dan ik dat    |
+  | tekst toevoegen| dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
+  Eigen vragen:
+  - Hoe moet ik de animatie in de header maken? Met javascript? 
+  
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - De animatie in de header kan je met css ook maken en dit wordt in week 4 uitgelegd. (denk er wel aan voor beperkingen hoe je dit gaat dpen)
+  - Section: nth-of-type(2) Section: nth-of-type(2) p{
+}  —> section in section aanspreken op deze manier
+  - Om de tekst bij een img in een carousel te zetten mis het handig om een ul met list items na te maken
+  - Denk goed na over de vevanger van de div
+  - De moeilijke dingen zoals een header die veranderd bij scrollen met javascript moet je op het laatst doen --> intersection observer
+  
 
 </details>
 
