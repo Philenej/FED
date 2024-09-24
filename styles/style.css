@@ -66,26 +66,24 @@ header a{
     font-family: var(--oceanwide-semibold);		
 }
 
-/* menu  */
+/* menu breedte  */
 nav {
 	padding: 1em;
 	display: grid;
 	gap: 1em;
-	/* z-index: 999; */
 }
 
 nav img {
 	height: 0.5em;
     width: 0.5em;
 }
-
+/* menu lengte */
 nav ul {
-	z-index: 1000;
+	display: flex;
 	position: fixed;
 	margin-left: 3em;
 	margin-top: 0;
 	margin-bottom: 0;
-	
 	top: 0;
 	bottom: 0;
 	left: 0;
@@ -94,22 +92,30 @@ nav ul {
 	font-size: 1.5em;
     display:flex;
 	flex-direction: column;
-    /* flex-wrap:wrap; */
     gap:1em;
     align-content:start;
-    /* background-color:var(--color-background); */
 	background-color: white;
 
   translate: 100%;
 /*  translate:0 100%; is x=0 en y=100 as  */
   transition: 1s;
 }
+/* zorgt dat log in etc niet zichtbaar is in navigatie */
+nav ul li:nth-last-child(-n+3) {
+	display: none;
+}
+/* zorgt ervoor dat het wel zichtbaar is in hamburgmenu */
+nav.toonMenu ul li:nth-last-child(-n+3){
+	display: block;
+}
 
 /* zorgt ervoor dat bij click het menu uitklapt en zichtbaar is */
 nav.toonMenu ul {
+	color: #ababab;
     translate: 0%;
 
   }
+
   nav.toonMenu button img {
     /* url kruisje: https://assets.codepen.io/274456/ui-icon-cross.svg */
     content:url("https://assets.codepen.io/274456/ui-icon-cross.svg");
@@ -129,7 +135,8 @@ nav li {
   /* MENU BUTTON */
   /***************/
   nav button {
-	z-index: 1100;
+	/* is nodig om de menu button te laten zien bij uitklap */
+	z-index: 100;
     padding:.5em;
     display:flex;
     align-items:center;
@@ -159,14 +166,18 @@ nav li {
     }
     
     nav ul {
-	flex-direction: row;
+	  flex-direction: row;
+	  /* justify-content: flex-start; */
       position: static;
       translate: none;
       background: none;
       padding: 0;
    /* nodig voor mijn code !!!!!!111 */
     } 
-    
+    /* nav ul li:nth-last-child(-n+3) {
+		display: none;
+	} */
+
     nav li {
       flex-basis: 0;
     /* de standaard breedte    */
@@ -178,5 +189,76 @@ nav li {
     nav a {
       border: none;
     }
+	body{
+		/* background-color: #111; */
+	}
     
   } 
+
+  @media (min-width:44em) {
+	body {
+		background-color: #ffffff;}
+	
+	section ul li {
+		/* background-color: #111; */
+		
+
+	}
+  }
+
+
+  footer{
+	background-color:var(--footer-color);
+	color:var(--color-text2);
+  }
+  /* footer input[type="text"]{
+	margin: 1em 1em;
+	padding: 0.5em 1em;
+	border-radius: 2em;
+	background-color:var(--footer-color-input);
+	color: white;
+  } */
+
+  form {
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	padding: 0.5em 1em;
+  }
+
+  form input{
+	border-radius: 2em;
+	background-color:var(--footer-color-input);
+	/* color: white; */
+  }
+  footer a{
+	text-decoration: none;
+	border-radius: 2em;
+	padding: 0.5em 1em;
+	background-color:var(--footer-color-input);
+	color:var(--color-text2);
+  }
+
+  input[type="radio"]{
+    appearance: none;
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 50%;
+	border: 2px solid white;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	margin-right: 1em;
+  }
+  input[type="radio"]:checked::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+

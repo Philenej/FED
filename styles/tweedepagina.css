@@ -17,7 +17,7 @@
   /*********************/
   :root {
     --scherm-background:#fff;
-    
+    --cart-button: #6c6c6c;
    
     --menu-border:rgb(0, 0, 0);
     
@@ -35,8 +35,6 @@
   /* DE HEADER */
   /*************/
 
-
-  
   
   
   /***************/
@@ -44,8 +42,201 @@
   /***************/
   
 
+p {
+  font-family:var(--oceanwide-regular);
+}
+
+  section:nth-of-type(1) h2 {
+    font-family:var(--oceanwide-semibold);
+    margin-left: 1em;
+  }
+  
+  
+  section:nth-of-type(1) h3 {
+    order: -1;
+    margin-left: 1em;
+    text-align: center;
+    font-family:var(--oceanwide-regular);
+  
+  }
+  section:nth-of-type(1) p {
+    order: -2;
+     color:var( --color-p);
+     text-align: center;
+     font-family:var(--oceanwide-regular);
+     /* margin-left: 1em; */
+     padding: 1em 2em;
+     
 
   
+  }
+
+  section:nth-of-type(1) ul a {
+    font-family:var(--oceanwide-regular);
+    padding: 1em 1.5em;
+    border-radius: 10em;
+    border: 0.1em solid rgb(222, 222, 222);
+  }
+ /* Bij hover van de maten  */
+  section ul:nth-of-type(2) li a:hover {
+    border: 0.1em solid rgb(12, 12, 12);
+  }
+
+/* add to cart */
+  section:nth-of-type(1) a:nth-of-type(1) {
+    display: flex;
+    justify-content: center;
+    /* background-color:var(--cart-button); */
+    padding: 1em 1.5em;
+    border-radius: 10em;
+    border: 0.1em solid rgb(222, 222, 222);
+  }
+  /* size chart */
+  section:nth-of-type(1) a:nth-of-type(2)  {
+    display: flex;
+    justify-content: center;
+    padding: 1em 1.5em;
+    border-radius: 10em;
+    border: 0.1em solid rgb(222, 222, 222);
+  }
+  /* section:nth-of-type(2) ul {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+   
+  } */
+  section:nth-of-type(1) ul:nth-of-type(1) {
+    display: flex;
+    overflow-x: auto;
+   
+  }
+  /* maten */
+  section:nth-of-type(1) ul:nth-of-type(2) {
+     display: flex;
+     justify-content: center;
+     overflow-x: auto;
+    
+   }
+  
+   section:nth-of-type(1) li {
+    display:flex;
+    flex-direction:column-reverse;
+    flex-basis:5em;
+    flex-shrink:0;
+    align-items:center;
+    gap:.25em;
+    scroll-snap-align: center;
+  
+   }
+   /* de swipe shirt */
+   section:nth-of-type(1) ul li img:nth-of-type(1) {
+    width: 30em;
+    height: 30em;
+    max-width: 30em;
+    /* max-height: 300px; */
+    
+    /* width: 100vw;
+    height: 100vh; */
+    /* object-fit: cover; */
+    object-fit: contain;
+    /* height: 350px;
+    width: 500px;  */
+    /* display: inline-block; */
+    margin-left: 1em;
+  }
+  /* hartje */
+  section img:nth-of-type(1) {
+    width: 40px;
+    height: 40px;
+  }
+  
+
+  section:nth-of-type(2) p {
+    border-top: .05em solid #cbcbcb;
+    padding: 2em 2em;
+    text-align: center;
+    font-size: .8em;
+    order: 2;
+  }
+
+  /* Composition */
+  section:nth-of-type(3) h2 {
+    font-family:var(--oceanwide-regular);
+    margin-left: 1em;
+    padding: 1.5em 0;
+    font-size: 1em;
+    /* border-bottom: .05em solid #646464; */
+  }
+  /* Shipping */
+  section:nth-of-type(4) h2 {
+
+    font-family:var(--oceanwide-regular);
+    margin-left: 1em;
+    padding: 1.5em 0;
+    font-size: 1em;
+
+  }
+  /* Returns */
+  section:nth-of-type(5) h2 {
+    font-family:var(--oceanwide-regular);
+    margin-left: 1em;
+    padding: 1.5em 0;
+    font-size: 1em;
+  }
+  section:nth-of-type(3) img,
+   section:nth-of-type(4) img,
+    section:nth-of-type(5) img {
+    object-fit: contain;
+    width: 1em;
+  }
+
+  section:nth-of-type(3) {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: .05em solid #646464;
+  }
+
+  section:nth-of-type(4) {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: .05em solid #646464;
+  }
+
+  section:nth-of-type(5) {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: .05em solid #646464;
+  }
+/* voor de ul shopping informatie */
+  section:nth-of-type(2) ul{
+  display: flex;
+  flex-direction: column;
+  
+  }
+  section:nth-of-type(1) p {
+    order: 2;
+  }
+  section:nth-of-type(1) img {
+    order: 1;
+  }
+  section:nth-of-type(2) ul:nth-of-type(1) {
+    list-style-type: none;
+
+   }
+  section:nth-of-type(2) ul li img:nth-of-type(1)  {
+    /* order: -1; */
+    width: 1.5em;
+    height: 1.5em;
+  }
+  section:nth-of-type(2) ul li img  {
+    order: 1;
+    list-style-type: none;
+  }
+  section:nth-of-type(2) ul li p {
+    order: 2;
+    list-style-type: none;
+  }
+    
 
   /****************************************************************/
   /* styling voor de header als de browser minimaal 57em breed is */
@@ -61,34 +252,8 @@
    
   
 
-.WitShirt1{    
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-}
-.WitShirt2{
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-}
-.WitShirt{
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
 
-}
-.Spijker{
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-}
-.BlauwMan{
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-}
-.BlauwVrouw{
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-}
+
+
+
+

@@ -8,7 +8,7 @@
 	
 	<link href="styles/style.css" rel="stylesheet">
 	<link href="styles/home.css" rel="stylesheet">
-	<link href="styles/tweedepagina.css" rel="stylesheet">
+	<!-- <link href="styles/tweedepagina.css" rel="stylesheet"> -->
 
 </head>
 <body>
@@ -24,13 +24,13 @@
         <li><a href="#" class="active">Men</a></li>
         <li><a href="#" class="active">Women</a></li>
         <li><a href="#" class="active">Accessories</a></li>
-        <!-- <div> -->
+     
 		    <li><a href="#" class="active">Collection</a></li>
-        <!-- <img class="Arrow" src="./images/Arrow.png" alt="Arrow"><!-- <a href="https://www.freepik.com/icon/right-arrow_758778#fromView=resource_detail&position=21">Icon by Kiranshastry</a> -->
-       <!-- </div>   --> 
-        <!-- <li>Log In / Register</li>
-        <li>FAQ</li>
-        <li>Contact us</li> -->
+        <!-- <img class="Arrow" src="./images/Arrow.png" alt="Arrow"> <a href="https://www.freepik.com/icon/right-arrow_758778#fromView=resource_detail&position=21">Icon by Kiranshastry</a> -->
+        
+        <li class="extra">Log In / Register</li>
+        <li class="extra">FAQ</li>
+        <li class="extra">Contact us</li> 
       </ul>
 
     </nav>
@@ -61,7 +61,7 @@
          <img class="WitShirt1" src="./images/FotoWitShirt.png" alt="T-Shirt Collection">
          
           <ul>
-        <li> <img class="WitShirt2" src="./images/WItShirt2..png" alt="Wit Mirror T-Shirt Collection">
+        <li> <img class="WitShirt2" src="./images/WItShirt2.png" alt="Wit Mirror T-Shirt Collection">
         <h3>White Mirror T-Shirt</h3>
          <p>$64.95</p> </li>
         <li> <img class="WitShirt3" src="./images/WitteShirt3.png" alt="Wit Mirror T-Shirt Collection">
@@ -81,13 +81,23 @@
        <section>
          <p>New Arrivals</p>
          <h2>Denim</h2>
+         
          <img class="Spijker" src="./images/SpijkerKleding.png" alt="Spijker">
-         <img class="Spijker" src="./images/BlauwDenim.jpg" alt="Spijker">
-         <img class="Spijker" src="./images/BlauwDenimBroek.jpg" alt="Spijker">
-         <img class="Spijker" src="./images/DonkerDenimJas.jpg" alt="Spijker">
-         <img class="Spijker" src="./images/DenimBroek2.jpg" alt="Spijker">
-         <h3>Blue Rahul Shield Shirt</h3>
-         <p>$159.95</p>
+        <ul> 
+         <li> <img class="Spijker" src="./images/BlauwDenim.jpg" alt="Spijker"> 
+          <h3>Blue Rahul Shield Shirt</h3>
+          <p>$159.95</p></li>
+         <li><img class="Spijker" src="./images/BlauwDenimBroek.jpg" alt="Spijker">
+          <h3>Blue Rahul Shield Shirt</h3>
+          <p>$159.95</p></li>
+         <li><img class="Spijker" src="./images/DonkerDenimJas.jpg" alt="Spijker">
+          <h3>Blue Rahul Shield Shirt</h3>
+          <p>$159.95</p></li>
+         <li><img class="Spijker" src="./images/DenimBroek2.jpg" alt="Spijker">
+          <h3>Blue Rahul Shield Shirt</h3>
+         <p>$159.95</p></li>
+        
+        </ul>
          <a>Shop men</a>
          <a>Shop Women</a>
        </section>
@@ -119,16 +129,30 @@
        <section>
          <p>Find us</p>
          <h2>Our stores</h2>
-      <div>
-       <div>
-         <img class="Locatie1" src="./images/Locatie1.png" alt="Locatie 1">
-         <img class="Locatie2" src="./images/Locatie2.png" alt="Locatie 2">
-         <img class="Locatie3" src="./images/Locatie3.png" alt="Locatie 3">
-       </div> 
-      </div>
-         <h3>Amsterdam</h3>
+      <!-- <div>
+       <div> -->
+        <ul>
+       <li> <img class="Locatie1" src="./images/Locatie1.png" alt="Locatie 1">
+        <h3>Amsterdam</h3>
+        <p>Bilderdijkstraat 131</p> 
+        <p>1053 KN, Amsterdam</p>
+      </li> 
+        <li> <img class="Locatie2" src="./images/Locatie2.png" alt="Locatie 2">
+          <h3>Amsterdam</h3>
+          <p>Bilderdijkstraat 131</p> 
+          <p>1053 KN, Amsterdam</p>
+        </li>
+        <li> <img class="Locatie3" src="./images/Locatie3.png" alt="Locatie 3">
+          <h3>Amsterdam</h3>
+          <p>Bilderdijkstraat 131</p> 
+          <p>1053 KN, Amsterdam</p>
+        </li>
+       </ul>
+      <!-- </div> 
+      </div> -->
+         <!-- <h3>Amsterdam</h3>
          <p>Bilderdijkstraat 131</p> 
-         <p>1053 KN, Amsterdam</p>
+         <p>1053 KN, Amsterdam</p> -->
          <button></button>
        </section>
 
@@ -140,12 +164,30 @@
   <h2>Newsletter</h2>
   <p>Sign up to be the first to know about drops, special offers and more.</p>
   <p>I'm interested in:</p>
+  <label>
+    <input type="radio" name="interest" value="menswear">
+    Menswear
+  </label>
+
+  <label>
+    <input type="radio" name="interest" value="womenswear">
+    Womenswear
+  </label>
+
+  <label>
+    <input type="radio" name="interest" value="both">
+    Both
+  </label>
+
   <form>
-    <div>
-      <input type="text" placeholder="Your email" name="Email">
-    </div>
-    <a href="#">Submit</a>
+      <input type="text" placeholder="Your email" name="Email"> 
+      <a href="#">Submit</a>
   </form>
+
+  <label>
+    <input type="checkbox" name="privacy" required>
+    I agree to the Privacy Policy
+  </label>
 </section>
 </footer>
 
