@@ -166,7 +166,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
-
+ - De alt attributen worden gebruikt om een duidelijk beeld te schetsen van de images/iconen (dit was echt niet)
+ - door de kopjes kwam ik erachter dat de teksten nog niet perfect waren
+ - De navigatie word per kopje voorgelezen en er word gezegd bij wel nagviagtie die is.
 </details>
 
 

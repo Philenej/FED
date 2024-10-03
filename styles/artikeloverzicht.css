@@ -86,7 +86,7 @@ p {
   section:nth-of-type(1) a:nth-of-type(1) {
     display: flex;
     justify-content: center;
-  
+    font-family:var(--oceanwide-regular);
     /* background-color:var(--cart-button); */
     padding: 1em 1.5em;
     border-radius: 10em;
@@ -101,6 +101,7 @@ p {
     padding: 1em 1.5em;
     border-radius: 10em;
     border: 0.1em solid rgb(222, 222, 222);
+    font-family:var(--oceanwide-regular);
   }
   /* section:nth-of-type(2) ul {
     display: flex;
@@ -155,7 +156,7 @@ p {
   
   /* section size chart hart */
 section:nth-of-type(1) section {
-  /* display: flex; */
+  display: flex;
   justify-content: space-between;
   flex-grow: 1;
 }
@@ -196,19 +197,16 @@ section:nth-of-type(1) section a {
   }
 
   section:nth-of-type(3) {
-  display: flex;
   justify-content: space-between;
   border-bottom: .05em solid #646464;
   }
 
   section:nth-of-type(4) {
-  display: flex;
   justify-content: space-between;
   border-bottom: .05em solid #646464;
   }
 
   section:nth-of-type(5) {
-  display: flex;
   justify-content: space-between;
   border-bottom: .05em solid #646464;
   }
@@ -250,7 +248,20 @@ section:nth-of-type(1) section a {
     cursor: pointer;
    }
 
-
+   section:nth-of-type(3) button,
+   section:nth-of-type(4) button,
+   section:nth-of-type(5) button{
+    border: none;
+    text-decoration: none;
+    font-size: 1em;
+    
+   }
+   section:nth-of-type(3) p,
+   section:nth-of-type(4) p,
+   section:nth-of-type(5) p{
+    display: none;
+    
+   }
    /* section:nth-of-type(3) p,
    section:nth-of-type(4) p,
    section:nth-of-type(5) p {

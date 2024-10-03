@@ -11,42 +11,23 @@ function toggleMenu(){
   Menu.classList.toggle("toonMenu");
 }
 
-// const tweedeDiv = document.querySelector('section:nth-of-type(7) > div');
 
-// let isDragStart = false, prevPageX, prevScrollLeft;
-
-// const dragStart = (e) => {
-//   isDragStart = true;
-//   prevPageX = e.pageX;
-//   prevScrollLeft = tweedeDiv.scrollLeft;
-
-// }
-
-// const dragging = (e) => {
-//   if(!isDragStart) return;
-//   e.preventDefault();
-//   let positionDiff = e.pageX - prevPageX;
-//   tweedeDiv.scrollLeft = prevScrollLeft - positionDiff;
-// }
-
-// const dragStop = () => {
-//   isDragStart = false;
-// }
-
-// tweedeDiv.addEventListener("mousedown", dragStart);
-// tweedeDiv.addEventListener("mousemove", dragging);
-// tweedeDiv.addEventListener("mouseup", dragStop);
-
-
-// document.querySelector('section img').forEach((toggle) => {
-//   toggle.addEventListener('click', function() {
-//     const content = this.nextElementSibling;
-//     if(content.style.display ==="none" || content.style.display === "") {
-//       content.style.display === "block";
-//     } else {
-//       content.style.display === "none";
-//     }
-//   });
-// });
-
+document.addEventListener("DOMContentLoaded", function() {
+  //  alle knoppen die een dropdown effect moeten hebben
+  document.querySelectorAll('section > h2 > button').forEach(function(button) {
+    button.addEventListener("click", function() {
+      // Zoek het paragraaf element binnen dezelfde section als de knop
+      const details = button.closest('section').querySelector('p'); 
+      
+      // Wissel de zichtbaarheid van het paragraaf element
+      if (details.style.display === "none" || details.style.display === "") {
+        details.style.display = "block"; // Toon de details
+        button.querySelector('span').textContent = "-"; // Verander het symbool naar "-"
+      } else {
+        details.style.display = "none"; // Verberg de details
+        button.querySelector('span').textContent = "+"; // Verander het symbool naar "+"
+      }
+    });
+  });
+});
 
