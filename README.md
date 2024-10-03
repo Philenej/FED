@@ -221,10 +221,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Korte omschrijving met plaatjes
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
-
+  Het hamburger menu was ik best trots op omdat ik hier bij de vorige vakken veel moeite 
+   mee had. 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Ik had soms te weinige tijd om de styling met css perfect te maken. En
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
