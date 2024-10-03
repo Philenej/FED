@@ -75,7 +75,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="images/Frame 1.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
@@ -102,11 +102,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1          | student 2      | student 3     | student 4       |
-  | Hoe kan ik de css  | HTML structuur |Bij tekst die  |Hoe maak je op de
-  | het best opdelen   | nakijken       |wordt afgekapt |juiste maniergebruik|
-  | (volgorde) HTML    | CSS checken    |met lees meer  |van de screenreader |
-  | structuur bekijken?| ...            |wel hele tekst?| ...              |
+  | student 1          | student 2      | student 3     | student 4    |
+  | Hoe kan ik de css  | HTML structuur |Bij tekst die  |Hoe maak je opde
+  | het best opdelen   | nakijken       |wordtafgekap   juistemanier|
+  | (volgorde) HTML    | CSS checken    |met lees meer  |gebruik van de 
+  | structuur bekijken?| ...            |wel hele        screenreader |tekst?| ...              |
 
 
   ### Verslag van meeting
@@ -135,8 +135,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   | student 1      | student 2          | student 3    | student 4        |
   | Hoe kan ik in  | ---                | ---          | ---              |
-  | de carousel    | en dit             | en ik dit    | en dan ik dat    |
-  | tekst toevoegen| dit als er tijd is | nog een punt | dit wil ik zeker |
+  | de carousel    | vervanger van div  | animatie     |                  |
+  | tekst toevoegen|                    | tutorials?   |                  |
   | ...            | ...                | ...          | ...              |
 
   Eigen vragen:
@@ -187,18 +187,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Hoe krijg ik de|de animatie wat moet| en ik dit    | en dan ik dat    |
+  |carousel juist  | minimaal?          | nog een punt | dit wil ik zeker |
+  |met afbeeldingen| ...                | ...          | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - H1 niet vergeten toe te voegen. Het logo zou een goede kunnen zijn
+  - Opschonen van html en css
+  - Responsive nog mee aan de bak  --- media query
+ 
 
 </details>
 
@@ -240,7 +240,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
+  1. https://codepen.io/shooft/live/VwJXNEg --->  uitplak menu
   2. bron 2
   3. ...
 

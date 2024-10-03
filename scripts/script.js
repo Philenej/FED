@@ -38,7 +38,15 @@ function toggleMenu(){
 // tweedeDiv.addEventListener("mouseup", dragStop);
 
 
-
-
+// document.querySelector('section img').forEach((toggle) => {
+//   toggle.addEventListener('click', function() {
+//     const content = this.nextElementSibling;
+//     if(content.style.display ==="none" || content.style.display === "") {
+//       content.style.display === "block";
+//     } else {
+//       content.style.display === "none";
+//     }
+//   });
+// });
 
 

@@ -30,7 +30,7 @@ button:not(:disabled){
 	--oceanwide-semibold:'Oceanwide-Semibold';
 	--oceanwide-regular:'Oceanwide-regular';
 	--color-text:#111;
-	--color-background:white;
+	--color-background:rgb(255, 255, 255);
 	--scherm-background:#fff;
 	--color-header-text:#ffffff;
 	--menu-gradient:rgb(234, 38, 38);
@@ -46,7 +46,9 @@ body{
 /* JOUW STYLING */
 /****************/
 
+
 header{
+  z-index: 10;
 	min-height:4em;
     padding:0 1em;
     line-height:1;
@@ -55,28 +57,61 @@ header{
     align-items: center;
     position: sticky;
     top: 0;
+    background-color: var(--scherm-background);
 }
-/* alle links in de header */
+
+header h1{
+  font-family: var(--oceanwide-semibold);	
+  font-size: 1.5em;
+}
 header a{
-	display: block;
+  display: block;
 	text-decoration: none;
 	color:var(--color-text);
 	padding:.5em 0;
 	font-weight: bold;
-    font-family: var(--oceanwide-semibold);		
+  font-family: var(--oceanwide-semibold);	
+}
+
+/* Button Unite */
+ nav ul li:nth-of-type(6) a{
+  border-radius: 1em;
+  border: 0.1em solid rgb(0, 0, 0);
+  padding: 9px 20px 7px;
+}
+nav ul li:nth-of-type(6) a:hover{
+  border-radius: 1em;
+  background-color: #111;
+  border: 0.1em solid rgb(0, 0, 0);
+  padding: 9px 20px 7px;
+}
+nav ul li:nth-of-type(5) {
+  position: relative;
+}
+nav ul li:nth-of-type(5) form {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* zoek icon voor in zoekbalk */
+nav form img {
+  position: absolute;
+  left: 9em;
+  height: auto;
+  width: 1.5em;
+  pointer-events: none;
 }
 
 /* menu breedte  */
 nav {
+  
 	padding: 1em;
 	display: grid;
 	gap: 1em;
+  align-items: center;
 }
 
-nav img {
-	height: 0.5em;
-    width: 0.5em;
-}
 /* menu lengte */
 nav ul {
 	display: flex;
@@ -89,7 +124,7 @@ nav ul {
 	left: 0;
 	right: 0;
     padding:4em 1em 0;
-	font-size: 1.5em;
+	/* font-size: 1.5em; */
     display:flex;
 	flex-direction: column;
     gap:1em;
@@ -105,6 +140,7 @@ nav ul li:nth-last-child(-n+3) {
 	display: none;
 }
 /* zorgt ervoor dat het wel zichtbaar is in hamburgmenu */
+
 nav.toonMenu ul li:nth-last-child(-n+3){
 	display: block;
 }
@@ -142,11 +178,18 @@ nav li {
     align-items:center;
     gap:.25em;
     appearance:none;
-    border: 1px solid;
+    border: 1px solid #dddddd;
     border-radius:.25em; 
     font:inherit;
     text-align:center;
     position:relative;
+  }
+  /* Weergave van header niet in uitplak menu */
+  nav ul li:nth-of-type(5),
+  nav ul li:nth-of-type(6),
+  nav ul li:nth-of-type(7),
+  nav ul li:nth-of-type(8) {
+    display: none;
   }
 
 /*********************/
@@ -154,6 +197,12 @@ nav li {
 /*********************/
 
   @media (min-width:38em) { 
+    nav ul li:nth-of-type(5),
+    nav ul li:nth-of-type(6),
+    nav ul li:nth-of-type(7),
+    nav ul li:nth-of-type(8) {
+      display: block;
+    }
     nav {
       
       order: 0; 
@@ -189,56 +238,139 @@ nav li {
     nav a {
       border: none;
     }
-	body{
-		/* background-color: #111; */
-	}
+   
     
   } 
 
-  @media (min-width:44em) {
-	body {
-		background-color: #ffffff;}
-	
-	section ul li {
-		/* background-color: #111; */
-		
 
-	}
+
+  /* @media (max-width: 768px) {
+    footer {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1em;
+    }
   }
-
-
-  footer{
-	background-color:var(--footer-color);
-	color:var(--color-text2);
-  }
-  /* footer input[type="text"]{
-	margin: 1em 1em;
-	padding: 0.5em 1em;
-	border-radius: 2em;
-	background-color:var(--footer-color-input);
-	color: white;
+  
+  @media (max-width: 480px) {
+    footer {
+      grid-template-columns: 1fr;
+    }
   } */
+ /* footer section:nth-of-type(1) {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0 100px;
+ } */
+ 
+ /* footer section:nth-of-type(1){
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+ 
+ } */
+ /* footer section:nth-of-type(1) section{
+  display: grid; 
+  margin: 2em 1em 2em;
+ } */
 
-  form {
-	display: flex;
-	flex-direction: row;
-	align-items: stretch;
-	padding: 0.5em 1em;
-  }
+ /* footer section ul li:first-child a{
+  font-family: var(--oceanwide-semibold); 
+  border-bottom: 2px solid white;
+  } */
+ footer section ul li a{
+ font-family: var(--oceanwide-regular); 
+ }
 
-  form input{
+
+
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  /* grid-template-columns: repeat(5, 1fr); */
+  gap: 2em;
+  background-color: var(--footer-color);
+  color: var(--color-text2);
+  padding: 2em;
+}
+
+footer section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  /* min-width: 200px; */
+  /* gap: 1em; */
+}
+footer section:nth-of-type(1) {
+  font-family: var(--oceanwide-regular);
+}
+
+footer section:nth-of-type(2) ul a,
+footer section:nth-of-type(3) ul a,
+footer section:nth-of-type(4) ul a,
+footer section:nth-of-type(5) ul a{
+  display: flex;
+
+}
+
+footer section h2 {
+  font-family: var(--oceanwide-semibold);
+  border-bottom: 2px solid white;
+  margin-bottom: 1em;
+}
+
+footer section ul {
+  margin-top: 0;
+  list-style: none;
+  padding: 0;
+
+}
+
+footer section ul li a {
+  text-decoration: none;
+  color: var(--color-text2);
+  font-family: var(--oceanwide-regular);
+  font-size: 0.9em;
+}
+
+
+
+
+
+
+
+
+ header form input:nth-of-type(1){
 	border-radius: 2em;
-	background-color:var(--footer-color-input);
-	/* color: white; */
+  padding: 9px 20px 7px;;
+  border: #d5d5d5 2px solid;
   }
+
+  footer form input:nth-of-type(1){
+    border-radius: 2em;
+    background-color:var(--footer-color-input);
+    padding: 0.5em 1em;
+    margin: 2em 1em;
+    /* color: white; */
+    }
   footer a{
 	text-decoration: none;
-	border-radius: 2em;
+  font-size: 0.9em;
 	padding: 0.5em 1em;
-	background-color:var(--footer-color-input);
 	color:var(--color-text2);
   }
 
+  footer section:nth-of-type(1) a{
+    text-decoration: none;
+    font-size: 0.9em;
+    border-radius: 20em;
+    border: #ababab 0.5em solid;
+    background-color: #ababab;
+    padding: 0.5em 0.5em;
+   
+    color:var(--color-text2);
+    }
+ 
   input[type="radio"]{
     appearance: none;
 	width: 1.5em;
