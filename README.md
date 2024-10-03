@@ -80,8 +80,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+
 
 </details>
 
@@ -214,18 +213,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="images/httpsphilenej.github.ioFED#.pdf" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="images/Scherm­afbeelding 2024-10-03 om 17.39.49.png" width="375px" alt="top">
   Het hamburger menu was ik best trots op omdat ik hier bij de vorige vakken veel moeite 
    mee had. 
 
   ### Dit was lastig/Is niet gelukt:
-  Ik had soms te weinige tijd om de styling met css perfect te maken. En
+  Ik had soms te weinige tijd om de styling met css perfect te maken.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
@@ -243,7 +242,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. https://codepen.io/shooft/live/VwJXNEg --->  uitplak menu
+  1. https://codepen.io/shooft/live/VwJXNEg --->  uitklap menu
   2. bron 2
   3. ...
 
