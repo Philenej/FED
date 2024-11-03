@@ -48,10 +48,8 @@ p {
   }
   section:nth-of-type(1) p {
     order: -2;
-     /* color:var( --color-p); */
      text-align: center;
      font-family:var(--oceanwide-regular);
-     /* margin-left: 1em; */
      padding: 1em 2em;
      
 
