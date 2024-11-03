@@ -96,7 +96,7 @@ header h1{
   font-size: 1.5em;
 }
 header a{
-/* display: block;    */
+
 	text-decoration: none;
 	color:var(--nav-text);
 	padding:.5em 0;
@@ -158,7 +158,6 @@ nav form img {
 nav {
 	padding: 1em;
   display: flex;
-	/* display: grid; */
 	gap: 1em;
   align-items: center;
   justify-content: center;
@@ -176,7 +175,6 @@ nav ul {
 	left: 0;
 	right: 0;
     padding:4em 1em 0;
-	/* font-size: 1.5em; */
     display:flex;
 	flex-direction: column;
     gap:1em;
@@ -238,13 +236,10 @@ nav li {
 	/* is nodig om de menu button te laten zien bij uitklap */
 	z-index: 100;
     padding: 0.3em 0.5em;
-    /* display:flex; */
     align-items:center;
     gap:.25em;
     appearance:none;
     border: 1px solid #dddddd;
-    border-radius:.25em; 
-    /* font:inherit; */
     text-align:center;
     position:relative;
   }
@@ -254,16 +249,6 @@ nav li {
 /*********************/
 /* ..........*/
 /*********************/
-/* @media (min-width:38em) { 
-  nav ul li:nth-of-type(5),
-  nav ul li:nth-of-type(6),
-  nav ul li:nth-of-type(7),
-  nav ul li:nth-of-type(8) {
-    display: block;
-  }
-} */
-
-
 
 
   @media (min-width:59em) { 
