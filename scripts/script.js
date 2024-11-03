@@ -1,7 +1,7 @@
 // JavaScript Document
 console.log("hi");
 
-let ButtonMenu = document.querySelector("nav button");
+let ButtonMenu = document.querySelector("nav button:first-of-type");
 let Menu = document.querySelector("nav");
 
 ButtonMenu.onclick = toggleMenu;

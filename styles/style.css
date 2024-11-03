@@ -46,6 +46,7 @@ button:not(:disabled){
   --eerste-button:#ffffff;
   --button-color:#ffffff;
   --button-color--black:#111;
+  --color-uitklap-menu: rgb(255, 255, 255);
 	
 }
 
@@ -58,7 +59,7 @@ button:not(:disabled){
     --button-color--black:rgb(254, 255, 255);
     --scherm-background:#000;
     --button-color:#000;
-   
+    --color-uitklap-menu:rgb(47, 47, 47);
   }
 }
 
@@ -72,6 +73,9 @@ body{
 /****************/
 /* JOUW STYLING */
 /****************/
+
+
+
 
 
 header{
@@ -177,8 +181,9 @@ nav ul {
 	flex-direction: column;
     gap:1em;
     align-content:start;
-	background-color: white;
+	background-color: var(--color-uitklap-menu);
 
+  
   translate: 100%;
 /*  translate:0 100%; is x=0 en y=100 as  */
   transition: 1s;
@@ -193,25 +198,34 @@ nav.toonMenu ul li:nth-last-child(-n+3){
 	display: block;
 }
 
+nav.toonMenu li:nth-of-type(5),
+nav.toonMenu li:nth-of-type(8)
+ {
+  display: none;
+}
 /* zorgt ervoor dat bij click het menu uitklapt en zichtbaar is */
 nav.toonMenu ul {
 	color: #ababab;
     translate: 0%;
+    padding-left: 2em;
+    margin-left: 20em;
 
   }
 
-  nav.toonMenu > button img {
+  nav.toonMenu > button:first-of-type img {
     /* url kruisje: https://assets.codepen.io/274456/ui-icon-cross.svg */
     content:url("https://assets.codepen.io/274456/ui-icon-cross.svg");
   /*  er komt zo een kruisje als je het menu wilt sluiten!!!!!!  */
   }
-
+nav.toonMenu > button:nth-of-type(2),
+nav.toonMenu > button:nth-of-type(3) {
+  display: none;
+}
 
 
 nav li {
 	display: block;
 	flex-grow:0; 
-	padding-bottom: 0.5em;
 	list-style: none;
 	/* bij 1 hele breedte */
 }
@@ -220,17 +234,17 @@ nav li {
   /***************/
   /* MENU BUTTON */
   /***************/
-  nav > button {
+  nav > button:nth-of-type(1) {
 	/* is nodig om de menu button te laten zien bij uitklap */
 	z-index: 100;
-    padding:.5em;
-    display:flex;
+    padding: 0.3em 0.5em;
+    /* display:flex; */
     align-items:center;
     gap:.25em;
     appearance:none;
     border: 1px solid #dddddd;
     border-radius:.25em; 
-    font:inherit;
+    /* font:inherit; */
     text-align:center;
     position:relative;
   }
@@ -249,18 +263,8 @@ nav li {
   }
 } */
 
-@media (prefers-color-scheme: dark) {
-  nav form img {
-    content:url(images/Shoppingbag.png);
-  
-  }
-}
-/* @media (prefers-color-scheme: dark) {
-  nav ul li:nth-of-type(7) {
-    content:url(images/Shoppingbag.png);
-  
-  }
-} */
+
+
 
   @media (min-width:59em) { 
 
@@ -273,9 +277,9 @@ nav li {
       display: none; 
      /* in beeld bij klein scherm niet bij grootscherm !!!!!!!!!! nodig voor mijn code */
     }
-    
+
     nav ul {
-	  flex-direction: row;
+	    flex-direction: row;
       position: static;
       translate: none;
       background: none;
@@ -294,9 +298,25 @@ nav li {
       border: none;
     }
    
+    @media (prefers-color-scheme: dark) {
+      nav li:nth-of-type(7),
+      nav li:nth-of-type(8) {
+         background-color: #ffffff;
+         padding: 0.3em 0.6em;
+         border-radius: 0.5em;
+       
+       }
+       nav li:nth-of-type(5) img {
+        background-color: #ffffff;
+        padding: 0.1em 0.1em;
+        border-radius: 0.2em;
+       }
+     }
+     
 
-    
   } 
+
+
 
 
  footer section ul li a{
@@ -404,3 +424,22 @@ footer section ul li a {
     transform: translate(-50%, -50%);
 }
 
+
+
+nav button:nth-of-type(1){
+  order: 3;
+}
+nav button:nth-of-type(2){
+  background-color: white;
+  padding: 0.5em 0.5em;
+  border: none;
+  border-radius: 0.2em;
+  order: 1;
+}
+nav button:nth-of-type(3){
+  background-color: white;
+  padding: 0.5em 0.5em;
+  border: none;
+  border-radius: 0.2em;
+  order: 2;
+}
