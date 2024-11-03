@@ -9,20 +9,6 @@
   /*********************/
   /* CUSTOM PROPERTIES */
   /*********************/
-  :root {
-      /* startje */
-      --color-text:#111;
-      --color-text2:#eee;
-      --footer-color-input:#8e8e8e;
-      --footer-color:#111;
-      --color-background:#eee;
-      --color-header-text:#ffffff;
-      --border--radius: 26px;
-      --color-p:#8e8e8e;
-      --button-color:#ffffff;
-      --button-color--black:#111;
-     
-  }
   
   
   
@@ -32,58 +18,53 @@
   
 
   main section:nth-of-type(1) {
+    position: relative;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    /* grid-template-columns: 1fr; */
+     /* neem alle beschikbare ruimte in */
     bottom: 0;
   }
-  main section:nth-of-type(1) section {
+  main section:nth-of-type(1) div {
     position: absolute;
+    display: grid;
+    bottom: 0;
   }
   main section:nth-of-type(1) > img {
-    height: 100vh;
+ 
     width: 100vw;
     object-fit: cover;
-    grid-row: 1 / 2;
+    /* grid-row: 1 / 2; */
+     /* tot de eerste rij van de grid */
   
   }
 
-  main section:nth-of-type(1) > section h1 {
-    order: 2; 
-    font-size: 24px;    
+  main section:nth-of-type(1) > div h2 {
+    margin-left: 1em;
     font-family:var(--oceanwide-semibold);
-    line-height:1.75;
-    margin-left: 1em;
-  }
-  main section:nth-of-type(1) > section h2 {
-    margin-left: 1em;
     color:var(--color-text2) ;
     line-height:1.75;
   }
-  main section:nth-of-type(1) > section p {
+  main section:nth-of-type(1) > div p {
     font-size: 15px;
     text-transform: uppercase;
     font-family:var(--oceanwide-regular);
-    margin-left: 1.5em;
-    color:var(--color-text2) ;
+    margin: 0em 1.5em;
+    color:var(--color-text2);
     line-height:1.75;
   }
 
-  main section:nth-of-type(1) > section a {
-    order: 3;
+  main section:nth-of-type(1) > div a {
     text-decoration: none;
     line-height:1.75;
     color:var(--color-text); /* moest ook nog hier anders deed ie het niet */
     font-family:var(--oceanwide-regular);
-    background-color:var(--button-color);
+    background-color:var(--eerste-button);
     border-radius: 10em;
-    margin-left: 1.5em;
+    margin: 1.5em 1em;
     padding: 0.5em 1em;
     padding-left: 1.5em;
     max-width: 8em;
     text-align: center;
-    background:#de2626(0deg, transparent, 50%, #de2626 50%);
- background-size: 400px 80px;
 
   }
 section:first-of-type > section div a {
@@ -108,12 +89,33 @@ section:nth-of-type(1) a:hover::before {
   /* Section 2 featured items */
   /****************/
 
-section:nth-of-type(2) {
+main section:nth-of-type(2) {
   position: relative;
   margin-top: 8em;
 }
 
+section:nth-of-type(2) li {
+  display: grid;
+
+}
+
+section:nth-of-type(2) ul li p:nth-of-type(2){
+
+  grid-row-start: 1;
+  grid-column-start: 1;
+    grid-row-start: 1;
+    justify-self: end;
+    align-self: end;
+    margin: 1rem;
+    border: none;
+    background-color: var(--color-button-bg);
+    align-items: center;
+    padding: 0.5em 1em;
+    border-radius: var(--border-radius-button);
+}
+
 section:nth-of-type(2) p {
+  /* display: grid; */
   order: -2;
    color:var( --color-p);
    text-transform: uppercase;
@@ -122,13 +124,17 @@ section:nth-of-type(2) p {
    margin-top: 0;
    margin-left: 1.5em;
 }
+section:nth-of-type(2) p:nth-of-type(2) {
+  grid-area: 1/1/2/2;
+  color: aquamarine;
+}
 section:nth-of-type(2) h2 {
   order: 1;
   font-family:var(--oceanwide-semibold);
   margin-left: 1em;
 }
 
-section:nth-of-type(2) span {
+/* section:nth-of-type(2) span {
   font-family:var(--oceanwide-regular);
   background-color:var(--button-color);
   position: absolute; 
@@ -136,7 +142,7 @@ section:nth-of-type(2) span {
   left: 4em;
   padding: 0.5em 1em;
   border-radius: 10em;
-}
+} */
 section:nth-of-type(2) h3 {
   order: -1;
   margin-left: 1em;
@@ -164,7 +170,7 @@ main section:nth-of-type(2) li {
  align-items:center;
  gap:.25em;
  scroll-snap-align: start;
- align-items: flex-start;
+ 
 }
 
 section:nth-of-type(2) img {
@@ -186,14 +192,14 @@ section:nth-of-type(3) h2 {
 
 
 section:nth-of-type(3) h3 {
-  order: -3;
+  order: -2;
   margin-left: 1em;
   font-size: 1em;
   font-family:var(--oceanwide-regular);
 
 }
 section:nth-of-type(3) p {
-  order: -2;
+  order: -3;
    color:var( --color-p);
    text-transform: uppercase;
    font-family:var(--oceanwide-regular);
@@ -204,7 +210,6 @@ section:nth-of-type(3) p {
 }
 section:nth-of-type(3) > section p {
   padding-top: 5em;
-  order: -2;
    color:var( --color-p);
    text-transform: uppercase;
    font-family:var(--oceanwide-regular);
@@ -214,7 +219,8 @@ section:nth-of-type(3) > section p {
 
 }
 main section:nth-of-type(3) a {
-  display: inline-block;
+  display: flex;
+  max-width: fit-content;
   text-align: center;
   margin-left: 1em;
   color:var(--button-color);
@@ -228,7 +234,7 @@ main section:nth-of-type(3) a {
 main section:nth-of-type(3) ul {
    display: flex;
    overflow-x: auto;
-  scroll-snap-type: x mandatory;
+   scroll-snap-type: x mandatory;
 
  }
 
@@ -272,7 +278,8 @@ main section:nth-of-type(3) > img {
 
  section:nth-of-type(4) h3 {
   order: 2;
-   font-family:var(--oceanwide-regular);
+  padding-left: 1em;
+  font-family:var(--oceanwide-regular);
   
  }
  section:nth-of-type(4) img {
@@ -446,10 +453,10 @@ section:nth-of-type(5) section:hover img {
   transform: scale(1.2);
 }
 
-section:nth-of-type(5) li:nth-of-type(2) img {
+/* section:nth-of-type(5) li:nth-of-type(2) img {
   margin-top: 6em;
   
-}
+} */
 
 
   /****************/
@@ -476,13 +483,17 @@ section:nth-of-type(6) p {
   color:var( --color-p);
   /* text-transform: uppercase; */
   font-family:var(--oceanwide-regular);
-  padding-left: 0;
+  padding-left: 1em;
   margin-left: 1em;
   margin-top: 0;
   margin-bottom: 0;
 }
-
-section:nth-of-type(6) h3, h2 {
+section:nth-of-type(6)  h2 {
+  font-family:var(--oceanwide-semibold);
+  margin-left: 2em;
+  font-size: 1.4em;
+ }
+section:nth-of-type(6) h3 {
  font-family:var(--oceanwide-semibold);
  margin-left: 1em;
  font-size: 1.4em;
@@ -506,7 +517,8 @@ section:nth-of-type(6) ul li article a {
   font-family:var(--oceanwide-regular);
 }
 section:nth-of-type(6) a:last-of-type{
-  color: #111;
+  background-color: var(--button-color--black);
+  color: var(--button-color);
   padding: 1em 1.5em;
   border-radius: 10em;
   border: 0.1em solid rgb(222, 222, 222);
@@ -519,7 +531,7 @@ section:nth-of-type(6) a:last-of-type{
 
 @media (min-width:38em) { 
   main section:nth-of-type(5) {
-    grid-template-columns: repeat(2, 1fr);
+   grid-template-columns: repeat(2, 1fr);  /*  2 kolommen met de zelfde breedte */
   }
 
 }

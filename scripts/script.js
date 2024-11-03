@@ -12,6 +12,8 @@ function toggleMenu(){
 }
 
 
+
+
 document.addEventListener("DOMContentLoaded", function() {
   //  alle knoppen die een dropdown effect moeten hebben
   document.querySelectorAll('section > h2 > button').forEach(function(button) {
