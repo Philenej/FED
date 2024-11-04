@@ -36,12 +36,14 @@
   }
 
   main section:nth-of-type(1) > div h2 {
+    order: 2;
     margin-left: 1em;
     font-family:var(--oceanwide-semibold);
     color:var(--color-text2) ;
     line-height:1.75;
   }
   main section:nth-of-type(1) > div p {
+    order: 1;
     font-size: 15px;
     text-transform: uppercase;
     font-family:var(--oceanwide-regular);
@@ -51,6 +53,7 @@
   }
 
   main section:nth-of-type(1) > div a {
+    order: 3;
     text-decoration: none;
     line-height:1.75;
     color:var(--color-text); /* moest ook nog hier anders deed ie het niet */
